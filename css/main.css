@@ -8,19 +8,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4; }
-
-h1 {
-  padding: 0;
-  margin: 0; }
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -87,11 +84,90 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*********HEADER*********/
 header {
-  background-image: url(../img/bg.jpg);
+  background: url(../img/bg.jpg) #000;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh; }
+  background-position: center;
+  min-height: 450px;
+  -webkit-animation: banner 10s infinite;
+          animation: banner 10s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate; }
+@-webkit-keyframes banner {
+  0%,30% {
+    background-image: url(../img/bg.jpg); }
+  35%,65% {
+    background-image: url(../img/bg2.jpg); }
+  70%,100% {
+    background-image: url(../img/bg3.jpg); } }
+@keyframes banner {
+  0%,30% {
+    background-image: url(../img/bg.jpg); }
+  35%,65% {
+    background-image: url(../img/bg2.jpg); }
+  70%,100% {
+    background-image: url(../img/bg3.jpg); } }
+  header .contenedor-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    header .contenedor-banner .contenedor-texto {
+      text-align: center;
+      width: 100%;
+      margin: 30px 0;
+      color: #FFF;
+      text-shadow: 3px 3px 3px #000; }
+      header .contenedor-banner .contenedor-texto h1 {
+        font-size: 2em;
+        font-weight: 600;
+        font-style: italic;
+        margin: 0; }
+    header .contenedor-banner .menu {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      header .contenedor-banner .menu a {
+        width: 100px;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        text-decoration: none;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        color: rgba(255, 255, 255, 0.5); }
+        header .contenedor-banner .menu a:hover {
+          background: #000;
+          color: #FFF; }
+        header .contenedor-banner .menu a i {
+          font-size: 2em; }
 
 /* ==========================================================================
    Helper classes
@@ -99,7 +175,8 @@ header {
 .contenedor {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 /*
  * Hide visually and from screen readers
@@ -167,6 +244,22 @@ header {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 480px) {
+  header {
+    width: 100%; }
+    header .contenedor-banner {
+      background: red; } }
+@media screen and (min-width: 600px) {
+  body {
+    background: green; } }
+/*****************min-width: 767px**************/
+@media screen and (min-width: 767px) {
+  body {
+    background: blue; } }
+/**************** min-width: 950px ************/
+@media screen and (min-width: 950px) {
+  body {
+    background: yellow; } }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
