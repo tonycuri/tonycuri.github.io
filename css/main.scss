@@ -16,11 +16,13 @@
 }
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
 }
-
+a{
+  text-decoration: none;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -100,78 +102,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*********HEADER*********/
-header{
-  background: url(../img/bg.jpg) #000;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 450px;
-  animation: banner 10s infinite;
-  animation-direction: alternate;
-
-  @keyframes banner{
-    0%,30%{
-      background-image: url(../img/bg.jpg);
-    }
-    35%,65%{
-      background-image: url(../img/bg2.jpg);
-    }
-    70%,100%{
-      background-image: url(../img/bg3.jpg);
-    }
-  }
-  .contenedor-banner{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .contenedor-texto{
-      text-align: center;
-      width: 100%;
-      margin: 30px 0;
-      color:#FFF;
-      text-shadow: 3px 3px 3px #000;
-      h1{
-        font-size: 2em;
-        font-weight: 600;
-        font-style: italic;
-        margin: 0;
-      }
-    }
-    .menu{
-      width: 100%;
-      display:flex;
-      flex-flow: row wrap;
-        a{
-          width: 100px;
-          height: 100px;
-          display: flex;
-          margin: 20px;
-          background: rgba(0,0,0,.5);
-          border-radius: 50%;
-          text-decoration: none;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          color:rgba(255,255,255,0.5);
-          &:hover{
-            background: #000;
-            color:#FFF;
-          }
-          i{
-            font-size: 2em;
-          }
-        }
-    }
-  }
+.contenedor{
+  margin: 0 auto;
+  overflow: hidden;
+  max-width:1200px;
 }
+@import "header";
+@import "main2";
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-   .contenedor{
-     width: 90%;
-     max-width: 1000px;
-     margin: 0 auto;
-     overflow: hidden;
+   .titulo{
+     font-weight: 600;
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     &:after{
+      content: '';
+      margin: 0 auto;
+      width: 100px;
+      height: 3px;
+      display: block;
+      border-bottom: 2px solid;
+      border-top: 2px solid;
+     }
    }
 /*
  * Hide visually and from screen readers

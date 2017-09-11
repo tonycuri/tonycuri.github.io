@@ -1,20 +1,48 @@
 @media screen and (min-width: 480px){
-  header{
-    width: 100%;
-    .contenedor-banner{
-      background: red;
-    }
+  body{
+    background: red;
+  }
+  header .contenedor-banner .menu a:hover{
+      background: #000;
   }
 }
 @media screen and (min-width: 600px){
   body{
     background: green;
   }
+  /****HEADER****/
+  header{
+    .contenedor-banner {
+      .menu{
+        .menu-contenedor{
+          width: 50%;
+          justify-content: flex-end;
+          &:nth-child(2){
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+  /****MAIN***/
+  .servicios .contenedor-servicios .servicio{
+    width: 43%;
+    p{
+      width: 100%;
+    }
+  }
 }
 /*****************min-width: 767px**************/
 @media screen and (min-width: 767px){
   body{
     background: blue;
+  }
+  .contenedor-banner{
+    margin-top: 40px;
+  }
+  /****MAIN***/
+  .servicios .contenedor-servicios .servicio{
+    width: 25%;
   }
 }
 /**************** min-width: 950px ************/
