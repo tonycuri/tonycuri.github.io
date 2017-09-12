@@ -3,7 +3,7 @@
     background: red;
   }
   header .contenedor-banner .menu a:hover{
-      background: #000;
+      background: rgb(14,77,80);
   }
 }
 @media screen and (min-width: 600px){
@@ -43,6 +43,9 @@
   /****MAIN***/
   .servicios .contenedor-servicios .servicio{
     width: 25%;
+  }
+  .contenedor-trabajos:hover figure{
+    transform:perspective(600px) rotateY(180deg);
   }
 }
 /**************** min-width: 950px ************/
