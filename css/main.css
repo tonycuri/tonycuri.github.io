@@ -75,6 +75,8 @@ header .contenedor-banner .menu .menu-contenedor a i { font-size: 1.7em; margin-
 .titulo { font-weight: 600; text-align: center; font-family: 'Oswald', sans-serif; text-transform: uppercase; }
 .titulo:after { content: ''; margin: 0 auto; width: 100px; height: 3px; display: block; border-bottom: 2px solid; border-top: 2px solid; }
 
+.white { color: #FFF; }
+
 /* Hide visually and from screen readers */
 .hidden { display: none !important; }
 
