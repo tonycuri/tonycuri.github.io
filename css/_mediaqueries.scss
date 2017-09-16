@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px){
   body{
-    background: red;
+    // background: red;
   }
   header .contenedor-banner .menu a:hover{
       background: rgb(14,77,80);
@@ -8,21 +8,7 @@
 }
 @media screen and (min-width: 600px){
   body{
-    background: green;
-  }
-  /****HEADER****/
-  header{
-    .contenedor-banner {
-      .menu{
-        .menu-contenedor{
-          width: 50%;
-          justify-content: flex-end;
-          &:nth-child(2){
-            justify-content: flex-start;
-          }
-        }
-      }
-    }
+    // background: green;
   }
   /****MAIN***/
   .servicios .contenedor-servicios .servicio{
@@ -35,7 +21,7 @@
 /*****************min-width: 767px**************/
 @media screen and (min-width: 767px){
   body{
-    background: blue;
+    // background: blue;
   }
   .contenedor-banner{
     margin-top: 40px;
@@ -47,10 +33,19 @@
   .contenedor-trabajos:hover figure{
     transform:perspective(600px) rotateY(180deg);
   }
+  .acerca{
+    .titulo{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .habilidades,.descripcion{
+      width: 50%;
+    }
+  }
 }
 /**************** min-width: 950px ************/
 @media screen and (min-width: 950px){
   body{
-    background: yellow;
+    // background: yellow;
   }
 }

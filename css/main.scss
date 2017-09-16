@@ -121,7 +121,7 @@ textarea {
      &:after{
       content: '';
       margin: 0 auto;
-      width: 100px;
+      width: 130px;
       height: 3px;
       display: block;
       border-bottom: 2px solid;
@@ -130,6 +130,9 @@ textarea {
    }
    .white{
      color:#FFF;
+   }
+   .borde{
+     border:1px solid red;
    }
 /*
  * Hide visually and from screen readers
