@@ -1,15 +1,9 @@
 @media screen and (min-width: 480px){
-  body{
-    // background: red;
-  }
   header .contenedor-banner .menu a:hover{
       background: rgb(14,77,80);
   }
 }
 @media screen and (min-width: 600px){
-  body{
-    // background: green;
-  }
   /****MAIN***/
   .servicios .contenedor-servicios .servicio{
     width: 43%;
@@ -20,9 +14,6 @@
 }
 /*****************min-width: 767px**************/
 @media screen and (min-width: 767px){
-  body{
-    // background: blue;
-  }
   .contenedor-banner{
     margin-top: 40px;
   }
@@ -42,10 +33,12 @@
       width: 50%;
     }
   }
+  footer .contacto .formulario input[type="text"],
+  footer .contacto .formulario input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+  }
 }
 /**************** min-width: 950px ************/
 @media screen and (min-width: 950px){
-  body{
-    // background: yellow;
-  }
 }
